@@ -1,8 +1,6 @@
 from network import NeuralNetwork
 from interface import Interface
 from customtkinter import CTkLabel
-import threading
-import random
 import numpy as np
 
 class Diane:
