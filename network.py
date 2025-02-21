@@ -8,7 +8,7 @@ class NeuralNetwork:
         self.architecture = architecture
         self.learning_rate = learning_rate
         self.weights = []
-        self.cancel_training = False  # Flag utilisé pour l'annulation de l'entraînement
+        self.cancel_training = False
         self.setup_network()
 
     def sigmoid(self, x):
