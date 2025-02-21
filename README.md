@@ -19,17 +19,17 @@ cd Diane-1
 
 ## Installez les dépendances requises :
 
-    ```
-    pip install -r requirements.txt
-    ```
+```
+pip install -r requirements.txt
+```
 
 ## Utilisation
 
     ### Lancez l'application :
 
-    ```
-    python main.py
-    ```
+```
+python main.py
+```
 
     ### Utilisez l'interface pour :
 
