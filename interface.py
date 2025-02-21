@@ -60,6 +60,9 @@ class Interface(CTk):
         self.training_title = CTkLabel(self.training_frame, text="Training", font=("", 16, 'bold'), anchor='w')
         self.training_title.pack(padx=15, pady=5, fill='x')
         
+        self.train_file_menu = CTkOptionMenu(self.training_frame, values=self.trains_list, width=470, height=40, corner_radius=10, fg_color='gray22', button_color='gray25', button_hover_color='gray30')
+        self.train_file_menu.pack(padx=5, pady=5)
+
         self.epochs_frame = CTkFrame(self.training_frame, width=470, height=40, corner_radius=10, fg_color='gray22')
         self.epochs_frame.pack_propagate(False)
         self.epochs_frame.pack(padx=5, pady=5)
@@ -123,6 +126,9 @@ class Interface(CTk):
 
         self.network_test_btn = CTkButton(self.testing_left_frame, text="Test network", height=40, corner_radius=10, fg_color='gray25', hover_color='gray30', command=self.test_network)
         self.network_test_btn.pack(padx=5, pady=5, fill='x', side='bottom')
+
+        self.test_index_used_label = CTkLabel(self.testing_left_frame, text="Index used : ")
+        self.test_index_used_label.pack(padx=5, pady=5, fill='x', side='bottom')
 
         self.testing_right_frame = CTkFrame(self.testing_frame, corner_radius=15)
         self.testing_right_frame.pack_propagate(False)
@@ -254,20 +260,27 @@ class Interface(CTk):
             self.testing_output_computed_value.configure(text=f'{predicted_digit}')
             self.testing_output_expected_value.configure(text=f'{expected_digit}')
             
+            self.test_index_used_label.configure(text=f'Index used: {index}')
+
             for widget in self.test_pourcent_frame.winfo_children():
                 widget.destroy()
             for digit, prob in sorted_probs:
                 CTkLabel(self.test_pourcent_frame, text=f'{digit} : {prob*100:.5f}%', font=('Arial', 14)).pack(anchor='w')
 
     def update_vars(self):
+        trains_dir = "data/training"
+        self.trains_list = [os.path.basename(f) for f in glob.glob(os.path.join(trains_dir, "*.json"))]
+        
+        tests_dir = "data/testing"
+        self.tests_list = [os.path.basename(f) for f in glob.glob(os.path.join(tests_dir, "*.json"))]
+        
         weights_dir = "weights"
         self.weights_list = [os.path.basename(f) for f in glob.glob(os.path.join(weights_dir, "*.json"))]
 
-        tests_dir = "data/testing"
-        self.tests_list = [os.path.basename(f) for f in glob.glob(os.path.join(tests_dir, "*.json"))]
         try:
-            self.weights_file_menu.configure(values=self.weights_list)
+            self.train_file_menu.configure(values=self.trains_list)
             self.test_file_menu.configure(values=self.tests_list)
+            self.weights_file_menu.configure(values=self.weights_list)
         except :
             pass
 
