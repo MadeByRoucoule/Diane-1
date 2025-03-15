@@ -4,7 +4,7 @@
 ***A Python application combining a simple neural network and a modern graphical interface <br>for handwritten digit recognition.***
 
 [![Commits](https://img.shields.io/github/commit-activity/t/MadeByRoucoule/Diane-1)](https://github.com/MadeByRoucoule/Diane-1/commits/main/)
-[![Stars](https://img.shields.io/github/stars/pandaroux007/PandaTodo.svg?style=social&label=Stars)](https://github.com/MadeByRoucoule/Diane-1)
+[![Stars](https://img.shields.io/github/stars/MadeByRoucoule/Diane-1?style=social&label=Stars)](https://github.com/MadeByRoucoule/Diane-1)
 </div>
 
 ## 🚀 Features
