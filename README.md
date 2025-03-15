@@ -1,50 +1,54 @@
-# Diane・1
+<div align="center">
+  
+# [Diane・1]
+***A Python application combining a simple neural network and a modern graphical interface for handwritten digit recognition.***
 
-Diane・1 est une application Python combinant un réseau de neurones simple et une interface graphique moderne pour la reconnaissance de chiffres manuscrits.
+[![Commits](https://img.shields.io/github/commit-activity/t/MadeByRoucoule/Diane-1)](https://github.com/MadeByRoucoule/Diane-1/commits/main/)
+[![Stars](https://img.shields.io/github/stars/pandaroux007/PandaTodo.svg?style=social&label=Stars)](https://github.com/MadeByRoucoule/Diane-1)
+</div>
 
-## Fonctionnalités
+## 🚀 Features
 
-Réseau de neurones : Architecture [64, 16, 10] pour la classification des chiffres de 0 à 9.
-Interface graphique : Utilisation de customtkinter pour une interaction intuitive.
-Entraînement en temps réel : Suivi de la progression et estimation du temps restant.
-Chargement de poids : Possibilité de charger des poids pré-entraînés pour évaluation.
+- 🧠 Neural Network: Architecture [64, 16, 10] for classifying digits 0 to 9.
+- 🎨 GUI: Built with customtkinter for an intuitive and modern user experience.
+- ⏳ Real-Time Training: Track progress and estimate remaining time.
+- 📂 Weight Loading: Load pre-trained weights for quick evaluation.
+- 🔧 Installation
 
-## Installation
 
-Clonez le dépôt :
+## Clone the repository:
+
 ```
 git clone https://github.com/MadeByRoucoule/Diane-1.git
 cd Diane-1
 ```
 
-## Installez les dépendances requises :
+## 📦 Install the required dependencies:
 
 ```
 pip install -r requirements.txt
 ```
 
-## Utilisation
-
-### Lancez l'application :
+## ▶️ Usage
+Start the application:
 
 ```
 python main.py
 ```
 
-### Utilisez l'interface pour :
+### Use the interface to:
+✅ Train the model on handwritten digit data.
+✅ Test the model on sample inputs.
+✅ Load saved weights for a quick evaluation.
 
-Entraîner le modèle sur des données de chiffres manuscrits.
-Tester le modèle sur des échantillons de test.
-Charger des poids sauvegardés pour une évaluation rapide.
+## 📁 Project Structure
+📌 main.py – Main entry point initializing the neural network and UI.
+📌 network.py – Defines the neural network and its functions.
+📌 interface.py – Manages the graphical interface using customtkinter.
+📌 data/ – Directory for training and test datasets.
+📌 weights/ – Directory for saving and loading model weights.
 
-## Structure du projet
+🤝 Contributing
+Contributions are welcome! Feel free to submit issues and pull requests to improve the project.
 
-main.py : Point d'entrée principal qui initialise le réseau et l'interface.
-network.py : Contient la définition et les fonctions du réseau de neurones.
-interface.py : Gère l'interface utilisateur avec customtkinter.
-data/ : Répertoire pour les données d'entraînement et de test.
-weights/ : Répertoire pour sauvegarder et charger les poids du modèle.
-
-## Contribuer
-
-Les contributions sont les bienvenues ! Veuillez soumettre des issues et des pull requests pour améliorer le projet.
+[Diane・1]: https://github.com/MadeByRoucoule/Diane-1
