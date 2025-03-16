@@ -1,6 +1,10 @@
 <div align="center">
   
-# [Diane・1]
+<img src="assets/Diane-1_dark.png" width="80">
+
+# Diane・1
+
+  
 ***A Python application combining a simple neural network and a modern graphical interface <br>for handwritten digit recognition.***
 
 [![Commits](https://img.shields.io/github/commit-activity/t/MadeByRoucoule/Diane-1)](https://github.com/MadeByRoucoule/Diane-1/commits/main/)
